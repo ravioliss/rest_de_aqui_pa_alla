@@ -1,0 +1,234 @@
+/*
+
+--text: #e4eafc;
+--background: #020610;
+--primary: #799cef;
+--secondary: #4f1298;
+--accent: #ae24e5;
+
+*/
+
+@font-face {
+    font-family: 'jetbrains mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"),
+    url("../fonts/JetBrainsMonoNL-Medium.ttf") format("truetype");
+}
+
+
+/* header */
+body {
+    margin: 0;
+    background-color: #020610;
+}
+
+h1 {
+    text-align: center;
+    color: #e4eafc;
+    font-family: "jetbrains mono", sans-serif;
+    padding-top: 1%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 1%;
+    position: relative;
+    left: 18%;
+    width: 10vw;
+}
+
+nav li a {
+    display: inline-block;
+    width: 10vw;
+    text-align: center;
+    color: #799cef;
+    text-decoration: none;
+    padding-top: 5%;
+    font-family: "jetbrains mono", sans-serif;
+}
+
+
+nav li a:hover {
+    color: #ae24e5;
+}
+
+#reservaNav {
+    background-color: #4f1298;
+    border-radius: 30px;
+    padding:0.5%;
+}
+
+/* fin de header */
+
+
+/* logo */
+
+#logo {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 7vw;
+    height: 10vh;
+    object-fit: contain;
+}
+
+/* fin logo */
+
+#carta {
+    text-align: center;
+    padding: .5%;
+    color: #e4eafc;
+    font-family: "jetbrains mono", sans-serif
+
+}
+
+h2, h3, h4 {
+    text-align: center;
+    padding: 1%;
+    font-family: "jetbrains mono", sans-serif
+}
+
+/* span */
+.segundo {
+    color: #799cef;
+}
+
+/* fin span */
+
+/* precio */
+.precio {
+    color: #ae24e5;
+}
+
+article {
+    font-family: "jetbrains mono", sans-serif;
+    background-color: #4f1298;
+    padding: 3%;
+    border-radius: 20px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    color: #e4eafc;
+}
+
+p {
+    line-height: 2;
+    display: inline-block;
+}
+
+/* fin de carta */
+
+#bebidas {
+    margin-bottom: 5%;
+}
+
+/* aside  de imagenes de platos */
+aside {
+    text-align: center;
+    padding: 3%;
+    margin: 2%;
+}
+
+img {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+/* fin de aside  de imágenes de platos */
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.slideshow-container img {
+    max-width: 80%;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Navigation buttons */
+.slideshow-prev, .slideshow-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #e4eafc;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.slideshow-prev {
+    left: 10%;
+}
+
+.slideshow-next {
+    right: 10%;
+}
+
+.slideshow-prev:hover, .slideshow-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slideshow-prev:focus, .slideshow-next:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(42, 178, 250, 0.5);
+}
+
+/* footer */
+footer {
+    text-align: left;
+    padding: 3%;
+    color: #e4eafc;
+    font-family: "jetbrains mono", sans-serif
+}
+
+footer a:visited {
+    color: #799cef;
+}
+
+/* fin de footer */
+
+@media only screen and (max-width: 600px) {
+
+    #logo {
+        position: absolute;
+        width: 10%;
+        height: 15%;
+        left: 2%;
+        top: 2%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #reservaNav {
+        width:15vw;
+    }
+    nav li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li a {
+        font-size: 0.8rem;
+    }
+
+    #reservaNav {
+        background-color: #4f1298;
+        border-radius: 30px;
+        padding:0.5%;
+    }
+
+}

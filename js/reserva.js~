@@ -1,0 +1,7 @@
+
+const boton = document.getElementById("boton");
+document.getElementById("boton").addEventListener("click", function () {
+    document.getElementById("selected-menus-list").innerText = "Amanda";
+});
+
+

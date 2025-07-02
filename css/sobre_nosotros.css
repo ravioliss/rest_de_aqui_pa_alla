@@ -1,0 +1,236 @@
+/*
+
+--text: #e4eafc;
+--background: #020610;
+--primary: #799cef;
+--secondary: #4f1298;
+--accent: #ae24e5;
+
+*/
+
+@font-face {
+    font-family: 'jetbrains mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"),
+    url("../fonts/JetBrainsMonoNL-Medium.ttf") format("truetype");
+}
+
+
+/* header */
+body {
+    margin: 0;
+    background-color: #020610;
+}
+
+h1 {
+    text-align: center;
+    color: #e4eafc;
+    padding-top: 1%;
+    font-family: "jetbrains mono", sans-serif
+}
+
+ul li {
+    display: inline-block;
+    padding: 1%;
+    position: relative;
+    left: 18%;
+    width: 10vw;
+}
+
+nav li a {
+    display: inline-block;
+    width: 10vw;
+    text-align: center;
+    color: #799cef;
+    text-decoration: none;
+    padding-top: 5%;
+    font-family: "jetbrains mono", sans-serif
+}
+
+a {
+    font-family: "jetbrains mono", sans-serif
+}
+
+nav li a:hover {
+    color: #ae24e5;
+
+}
+
+#reservaNav {
+    background-color: #4f1298;
+    border-radius: 30px;
+    padding:0.5%;
+}
+
+
+/* fin de header */
+
+
+/* logo */
+
+#logo {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 7vw;
+    height: 10vh;
+    object-fit: contain;
+}
+
+/* fin logo */
+
+
+h1, h2, p {
+    font-family: "jetbrains mono", sans-serif;
+    color: #e4eafc;
+}
+
+article {
+    text-align: center;
+    font-family: "jetbrains mono", sans-serif
+}
+
+img {
+    max-width: 25%;
+    max-height: 25%;
+}
+
+
+
+/* Equipo */
+#victoria_foto {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    right: 5px;
+}
+
+#victoria_foto:hover {
+    transform: scale(1.1);
+}
+
+#kirby_foto {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    left: 2px;
+}
+
+#kirby_foto:hover {
+    transform: scale(1.1);
+}
+
+#camarero_foto {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    left: 8px;
+}
+
+#camarero_foto:hover {
+    transform: scale(1.1);
+}
+
+#somelier_foto {
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    left: 15px;
+}
+
+#somelier_foto:hover {
+    transform: scale(1.1);
+}
+
+#sobre_nosotros {
+    color: #2086ec;
+    font-size: 50px;
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* Fin Equipo */
+
+
+button {
+    background-color: #799cef;
+    color: #e4eafc;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 8%;
+    font-size: 25px;
+    font-family: "jetbrains mono", sans-serif
+}
+
+#boton_reserva {
+    margin-bottom: 5%;
+}
+
+hr {
+    border-top: 5px solid #e4eafc;
+}
+
+/* footer */
+footer {
+    text-align: left;
+    padding: 3%;
+    color: #e4eafc;
+    font-family: "jetbrains mono", sans-serif
+}
+
+footer a:visited {
+    color:#799cef;
+}
+/* fin de footer */
+
+@media only screen and (max-width: 600px) {
+
+    #logo {
+        position: absolute;
+        width: 10%;
+        height: 15%;
+        left: 2%;
+        top: 2%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #reservaNav {
+        width:15vw;
+    }
+    nav li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li a {
+        font-size: 0.8rem;
+    }
+
+    #reservaNav {
+        background-color: #4f1298;
+        border-radius: 30px;
+        padding:0.5%;
+    }
+
+    img {
+        max-width: 50%;
+        max-height: 50%;
+    }
+}
+
+

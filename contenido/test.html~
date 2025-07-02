@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/test.css">
+    <title>Test | De Aquí Para Allá </title>
+
+
+</head>
+
+<body>
+<header>
+    <h1> De aquí para allá</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="musicavivo.html">Musica</a></li>
+            <li><a href="sobre_nosotros.html">Nosotros </a></li>
+            <li><a href="preguntas_frecuentes.html">FAQ</a></li>
+            <li><a href="test.html">Test</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+        </ul>
+    </nav>
+    <figure>
+        <img id="logo" src="../img/logo.png" alt="logo"/>
+    </figure>
+</header>
+
+
+
+<footer>
+    <details>
+        <summary><strong> Políticas legales</strong></summary>
+        <summary>
+            <a href=""> Aviso Legal</a>
+        </summary>
+        <summary>
+            <a href="">Política de Privacidad </a>
+        </summary>
+        <summary>
+            <a href="">Política de Cookies</a>
+        </summary>
+    </details>
+</footer>
+</body>
+</html>

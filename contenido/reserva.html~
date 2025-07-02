@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reserva tu mesa">
+    <meta name="author" content="Rafael oliver"/>
+    <meta name="copyright" content="Rafael Oliver"/>
+    <meta name="keywords" content="restaurante, restaurantes, restaurantes"/>
+    <meta name="organitation" content="Rafael oliver"/>
+    <meta name="language" content="es"/>
+    <title>Reservas | De Aqui Pa'Alla</title>
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reserva.css">
+</head>
+
+<body>
+
+<header>
+    <h1> De Aquí Para Allá</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html"> Inicio </a></li>
+            <li><a href="carta.html"> Carta </a></li>
+            <li><a href="musicavivo.html"> Musica </a></li>
+            <li><a href="sobre_nosotros.html"> Nosotros </a></li>
+            <li><a href="preguntas_frecuentes.html"> FAQ </a></li>
+            <li><a href="reserva.html"> Reservas </a></li>
+        </ul>
+    </nav>
+    <figure>
+        <img id="logo" src="../img/logo.png" alt="logo"/>
+    </figure>
+</header>
+
+<!--reserva-->
+<article>
+    <h2> Reservas </h2>
+    <label id="l1" for="id_nombre">Nombre:</label>
+    <input type="text" id="id_nombre" name="nombre" placeholder="Escribe tu nombre aqui"/> <br>
+
+    <label for="id_email"><strong>Email</strong></label>
+    <input type="email" id="id_email" name="email" placeholder="Escribe tu email"> <br>
+
+    <label for="id_telefono"> Telefono</label>
+    <input type="tel" id="id_telefono" name="telefono" placeholder="Escribe tu telefono"> <br>
+
+    <label for="id_fecha"><strong> Fecha</strong></label>
+    <input type="date" id="id_fecha" name="fecha"> <br>
+
+    <label for="id_hora"> Hora</label>
+    <input type="time" id="id_hora" name="hora"> <br>
+
+    <label for="id_personas"> Cantidad de personas </label>
+    <input type="number" id="id_personas" name="personas" min="1" max="30"> <br>
+
+    <p>Terraza:</p>
+    <input type="radio" id="terraza_exteriror" name="Exterior" value="exterior">
+    <label for="terraza_exteriror"> Exterior</label>
+
+    <input type="radio" id="terraza_interior" name="interior" value="interior">
+    <label for="terraza_interior"> Interior</label> <br>
+
+    <p> ¿Tiene alguna alergia? </p>
+    <input type="radio" id="si_alergia" name="Si" value="si">
+    <label for="si_alergia">Si</label>
+    <input type="radio" id="no_alergia" name="No" value="no">
+    <label for="no_alergia">No</label> <br>
+    <label for="alergia"> Escriba su alergia</label> <br>
+    <textarea id="alergia" rows="4" cols="50" placeholder="Escribe su alergia aqui"></textarea>
+
+
+    <h2> Selecione Menú Degustación </h2>
+    <label for="selector"></label>
+    <select id="selector">
+        <option id="menu_PR" value=" Puerto Rico "> Menú Puerto Rico
+            - 25 Euros - IVA incluido
+        </option>
+        <option id="menu_CO" value=" Colombia "> Menú Colombia - 25
+            Euros IVA incluido - IVA incluido
+        </option>
+        <option id="menu_AR" value=" Argelia "> Menú Argelia - 25
+            Euros IVA incluido - IVA incluido
+        </option>
+        <option id="menu_ES" value=" España "> Menú España - 25 Euros
+            IVA incluido - IVA incluido
+        </option>
+    </select>
+
+    <button id="boton_add"> Añadir</button>
+    <button id="boton_borrar"> Borrar</button>
+
+    <h3>Menús seleccionados</h3>
+    <p id="menu_seleccionado"></p>
+    <div id="total_pagar"> Total a pagar:</div>
+
+</article>
+
+<!--pago-->
+
+<article>
+    <form>
+        <h2>Métodos de pago</h2>
+        <label for="id_tarjeta"> Número de tarjeta <small>(Campo obligatorio)</small></label>
+        <br>
+        <input type="tel" id="id_tarjeta" name="TJ" placeholder="XXXX-XXXX-XXXX-XXXX">
+        <br>
+        <label for="id_CD">Caducidad <small>(Campo obligatorio)</small></label>
+        <br>
+        <input type="tel" id="id_CD" name="CD" placeholder="XX/XX">
+        <br>
+        <label for="id_CVV">Escriba CVV <small>(Campo obligatorio)</small></label>
+        <br>
+        <input type="tel" id="id_CVV" name="CVV" placeholder="XXX"> <br>
+        <button id="boton_enviar" type="submit"> Enviar</button>
+    </form>
+</article>
+
+<footer>
+    <details>
+        <summary><strong> Políticas legales</strong></summary>
+        <summary>
+            <a href=""> Aviso Legal</a>
+        </summary>
+        <summary>
+            <a href="">Política de Privacidad </a>
+        </summary>
+        <summary>
+            <a href="">Política de Cookies</a>
+        </summary>
+    </details>
+</footer>
+
+<script>
+
+  /*  //crear las variables
+
+    const boton1 = document.getElementById("boton_add");
+    let menuTexto = '';
+    let clicks = 0;
+    const precio_menu = 25;
+
+    //crear el evento y la cadena
+
+    boton1.addEventListener("click", function () {
+        const resultado = document.getElementById("selector").value;
+        menuTexto += "Menú de: " + resultado + "<br>";
+        document.getElementById("menu_seleccionado").innerHTML = menuTexto;
+
+        // añadir los clicks y multiplicar con el precio del menu para obtener el total a pagar
+
+        clicks++;
+        const total = clicks * precio_menu;
+        document.getElementById("total_pagar").innerHTML = "Total a pagar: " + total + " Euros";
+    });
+
+
+    const envio = document.getElementById("boton_enviar");
+    envio.addEventListener("click", function () {
+        alert("Gracias por su reserva");
+    }); */
+
+
+  const boton1 = document.getElementById("boton_add");
+  const boton_borrar2 = document.getElementById("boton_borrar");
+  const precio_menu = 25;
+  let clicks = 0;
+
+  // Un array para almacenar los menús seleccionados
+  let menus = [];
+
+  //Crear eventos y cadenas
+  boton1.addEventListener("click", function () {
+      const resultado = document.getElementById("selector").value;
+      menus.push("Menú de: " + resultado); // Añadir el menú al array
+      document.getElementById("menu_seleccionado").innerHTML = menus.join("<br>"); // Mostrar todos los menús
+      clicks++; // Incrementar el contador de clics
+      const total = clicks * precio_menu; // Calcular el total
+      document.getElementById("total_pagar").innerHTML = "Total a pagar: " + total + " Euros"; // Actualizar el total
+  });
+
+  //borar ultima linea
+
+  boton_borrar2.addEventListener("click", function () {
+      menus.pop(); // Eliminar el último menú del array
+      clicks--; // Decrementar el contador de clics
+      const total = clicks * precio_menu; // Calcular el nuevo total
+      document.getElementById("menu_seleccionado").innerHTML = menus.join("<br>"); // Actualizar la visualización
+      document.getElementById("total_pagar").innerHTML = "Total a pagar: " + total + " Euros"; // Actualizar el total
+  });
+
+</script>
+
+</script>
+
+
+</body>
+</html>

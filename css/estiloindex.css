@@ -1,0 +1,227 @@
+/*
+
+--text: #e4eafc;
+--background: #020610;
+--primary: #799cef;
+--secondary: #4f1298;
+--accent: #ae24e5;
+
+*/
+
+@font-face {
+    font-family: 'jetbrains mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"),
+    url("../fonts/JetBrainsMonoNL-Medium.ttf") format("truetype");
+}
+
+/* header */
+body {
+    margin: 0;
+    background-color: #020610;
+}
+
+h1 {
+    text-align: center;
+    color: #e4eafc;
+    font-family: "jetbrains mono", sans-serif;
+    padding-top: 1%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 1%;
+    position: relative;
+    left: 18%;
+    width: 10vw;
+}
+
+nav li a {
+    display: inline-block;
+    width: 10vw;
+    text-align: center;
+    color: #799cef;
+    text-decoration: none;
+    padding-top: 5%;
+    font-family: "jetbrains mono", sans-serif;
+}
+
+
+nav li a:hover {
+    color: #ae24e5;
+}
+
+#reservaNav {
+    background-color: #4f1298;
+    border-radius: 30px;
+    padding: 0.5%;
+}
+
+/* fin de header */
+
+/* logo */
+#logo {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 7vw;
+    height: 10vh;
+    object-fit: contain;
+}
+
+/* fin logo */
+
+/* botones */
+
+#reserv {
+    text-align: center;
+
+}
+
+button {
+    border: none;
+    color: #e4eafc;
+    padding: 14px 28px;
+    border-radius: 5px;
+    background-color: #ae24e5;
+    box-shadow: 20px 10px 20px #e4eafc;
+}
+
+button:hover {
+    box-shadow: 20px 10px 20px #4f1298;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-family: "jetbrains mono", sans-serif;
+}
+
+button {
+    padding: 2%;
+}
+
+/* fin de botones */
+
+/* Mapa */
+
+figure {
+    padding-top: 1%;
+}
+
+.st0 {
+    fill: #e4eafc;
+    stroke: #4f1298;
+    stroke-width: 0.5;
+    stroke-linecap: round;
+    stroke-miterlimit: 5;
+}
+
+#PR, #CO, #DZ, #ES {
+    fill: #799cef;
+    stroke: #799cef;
+    box-shadow: 20px 10px 20px #799cef;
+}
+
+#PR:hover {
+    fill: #ae24e5;
+    transform: translateY(-8px); /* Mueve hacia arriba al pasar el cursor */
+}
+
+#PR.stay {
+    transform: translateY(0); /* Mantiene la posición original */
+}
+
+#CO:hover {
+    fill: #ae24e5;
+    transform: translateY(-10px); /* Mueve hacia arriba al pasar el cursor */
+    transition: transform 0.3s; /* Suaviza la transición */
+}
+
+#DZ:hover {
+    fill: #ae24e5;
+    transform: translateY(-10px); /* Mueve hacia arriba al pasar el cursor */
+    transition: transform 0.3s; /* Suaviza la transición */
+}
+
+#ES:hover {
+    fill: #ae24e5;
+    transform: translateY(-10px); /* Mueve hacia arriba al pasar el cursor */
+    transition: transform 0.3s;
+}
+
+/* Suaviza la transición *
+
+/* fin mapa */
+
+/* Locations */
+
+/* Locations */
+
+/* footer */
+
+footer {
+    text-align: left;
+    padding: 3%;
+    color: #e4eafc;
+    font-family: "jetbrains mono", sans-serif
+}
+
+footer a:visited {
+    color: #799cef;
+}
+
+/* fin de footer */
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+
+    #logo {
+        position: absolute;
+        width: 10%;
+        height: 15%;
+        left: 2%;
+        top: 2%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #reservaNav {
+        width: 15vw;
+    }
+
+    ul li {
+        position: relative;
+        left: 10%;
+        width: 12vw;
+    }
+
+    section {
+        position: relative;
+        top: 10vw;
+    }
+
+    footer {
+        height: 10vh;
+        position: absolute;
+        width: 100vw;
+        bottom: 0;
+    }
+
+
+    nav li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li a {
+        font-size: 0.8rem;
+    }
+
+
+}

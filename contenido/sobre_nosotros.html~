@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reserva tu mesa">
+    <meta name="author" content="Rafael oliver"/>
+    <meta name="copyright" content="Rafael Oliver"/>
+    <meta name="keywords" content="restaurante, restaurantes, restaurantes"/>
+    <meta name="organitation" content="Rafael oliver"/>
+    <meta name="language" content="es"/>
+    <link rel="stylesheet" href="../css/sobre_nosotros.css">
+    <title>Sobre nosotros-De Aqui Pa'Alla</title>
+</head>
+<body>
+<header>
+    <h1> De aquí para allá</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="carta.html">Carta</a></li>
+            <li><a href="musicavivo.html">Musica en Vivo</a></li>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros </a></li>
+            <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+            <li><a href="test.html">Test</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+        </ul>
+    </nav>
+    <figure>
+        <img id="logo" src="../img/logo.png" alt="logo"/>
+    </figure>
+</header>
+
+<section>
+    <article>
+        <h1 id="sobre_nosotros">Sobre nosotros</h1>
+        <h2 id="equipo">Conoce al equipo</h2>
+        <figure>
+            <div id="victoria">
+                <img id="victoria_foto" src="../img/victoria.jpeg" alt="imagen"/>
+
+                <img id="kirby_foto" src="../img/kirby.jpg" alt="camarero"/>
+
+                <img id="camarero_foto" src="../img/camarero.png" alt="mesero"/>
+
+                <img id="somelier_foto" src="../img/charon.jpg" alt="somelier"/>
+            </div>
+
+        </figure>
+        <div>
+        <h2 id="contactanos">Contactanos</h2>
+        <p>Numero de telefono:(555)123-4567</p>
+        <p>Correo Electronico:deaquipa'alla@gmail.com</p>
+
+        <h2 id="horario">Nuestro horario</h2>
+        <p id="texto3">Lunes a Viernes::13:00 a 23:00</p>
+        <p id="texto4">Sabados y Domingos:12:00 a 00:00</p>
+
+        <h2 id="redes">Nuestras redes</h2>
+        <p id="ins">Instragram:De Aqui Pa'alla</p>
+        <p id="face">Facebook:De Aqui Pa'alla</p>
+
+        <h2 id="eventos">Eventos</h2>
+        <p id="texto7">De Marzo a Mayo habran conciertos</p>
+        <p id="texto8">Los Miercoles seran de comedia</p>
+
+        <h2 id="reserva">Reserva</h2>
+        <p id="texto9">te interesa reservar? haz click en el siguiente enlace para hacer una reserva</p>
+        <a href="/contenido/reserva.html" id="res">Reserva</a>
+        </div>
+    </article>
+</section>
+<footer>
+
+    <p id="valora">Haz tu reseña</p>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>¿Cuantas estrellas nos das?</legend>
+            <input type="radio" id="id_1" name="E1" value="E1">
+            <label for="id_1">&#9733;</label>
+            <br>
+            <input type="radio" id="id_2" name="E2" value="E2">
+            <label for="id_2">&#9733;&#9733;</label>
+            <br>
+            <input type="radio" id="id_3" name="E3" value="E3">
+            <label for="id_3">&#9733;&#9733;&#9733;</label>
+            <br>
+            <input type="radio" id="id_4" name="E4" value="E4">
+            <label for="id_4">&#9733;&#9733;&#9733;&#9733;</label>
+            <br>
+            <input type="radio" id="id_5" name="E5" value="E5">
+            <label for="id_5">&#9733;&#9733;&#9733;&#9733;&#9733;</label>
+        </fieldset>
+        <label for="id_text">Ayudanos a mejorar</label>
+        <br>
+        <textarea id="id_text" rows="4" cols="50" placeholder="Escribe en que podemos mejorar"></textarea>
+        <br>
+        <button type="reset">Enviar</button>
+    </form>
+    <details>
+        <summary><strong> Políticas legales</strong></summary>
+        <summary>
+            <a href=""> Aviso Legal</a>
+        </summary>
+        <summary>
+            <a href="">Política de Privacidad </a>
+        </summary>
+        <summary>
+            <a href="">Política de Cookies</a>
+        </summary>
+    </details>
+</footer>
+</body>
+</html>

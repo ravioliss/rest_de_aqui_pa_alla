@@ -1,0 +1,146 @@
+<!doctype html> <!-- Amina -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Amina Benkhaldi">
+    <meta name="description" content="Restaurante internacional con música en vivo">
+    <meta name="keywords" content="Música en vivo, tickets, espectáculos, eventos, música, Argelia, Puerto Rico, España, Colombia, De aqui pa' allá ">
+    <link rel="stylesheet" href="../css/estilomusica.css">
+    <title>Eventos</title>
+
+
+
+
+</head>
+<body>
+<header>
+    <h1> De aquí para allá</h1>
+    <figure>
+        <img src="img/logo.png" alt="logo" /></figure>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="musicavivo.html">Musica en Vivo</a></li>
+            <li><a href="sobre_nosotros.html">Sobre Nosotros </a></li>
+            <li><a href="preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+            <li><a href="test.html">Test</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="#Próximos Eventos">Próximos Eventos</a></li>
+        <li><a href="#Galería">Galería</a></li>
+        <li><a href="Sección tercera"></a></li>
+    </ul>
+</nav>
+
+
+<article>
+    <h1> Música en vivo y eventos </h1>
+    <p> De Aquí Pa' Allá" te invita a un viaje sin igual,
+        con música en vivo, ¡un espectáculo mundial!
+        De Colombia a Puerto Rico, pasando por España,
+        y los vibrantes ritmos de Argelia que nos acompañan.
+        Desde el alma del flamenco hasta cada rincón,
+        En De Aquí Pa' Allá, la música es pasión.</p>
+
+
+</article>
+
+
+
+
+<section class="eventos">
+    <h2> Próximos Eventos</h2>
+    <div class="evento">
+
+        <figure>
+            <img src="../img/eventos/babylone.jpg" alt="Babylone"/>
+        </figure>
+        <h3>Babylone</h3>
+        <p> Sábado, 15 de marzo del 2025 </p>
+        <p> Lugar: Sala de eventos "De aqui pa' allá</p>
+    </div>
+
+
+    <div class="evento">
+
+        <figure>
+            <img src="../img/eventos/pacopeña.jpg" alt="Paco peña"/>
+        </figure>
+        <h3>The Paco Peña Flamenco Dance Company </h3>
+        <p> Fecha: 22 de marzo del 2025 </p>
+        <p> Lugar: Sala de eventos "De aqui pa' allá </p>
+    </div>
+
+    <div class="evento">
+
+
+        <figure>
+            <img src="../img/eventos/losplanetas.jpeg" alt="Los planetas"/>
+        </figure>
+        <h3>Los Planetas </h3>
+        <p> Fecha: 29 de marzo del 2025 </p>
+        <p> Lugar: Sala de eventos "De aqui pa' allá </p>
+    </div>
+
+    <div class="evento">
+
+        <img src="../img/eventos/candelario.webp" alt="Puerto Candelaria"/>
+        <h3> Puerto Candelaria </h3>
+        <p> Fecha: 05 de abril del 2025 </p>
+        <p> Lugar: Sala de eventos "De aqui pa' allá </p>
+    </div>
+
+    <div class="evento">
+        <figure><img src="../img/eventos/djbolita.webp" alt="DJ"/></figure>
+        <h3> Dj Boludo  </h3>
+        <p> Todos los viernes </p>
+        <p> Lugar: Sala de eventos "De aqui pa' allá </p>
+    </div>
+
+</section>
+
+
+<section class="galeria">
+    <h2> Galería</h2>
+    <h3>Nuestra equipo de músicos</h3>
+    <div class="imagenes">
+        <figure>
+            <img src="../img/eventos/pexels-pluyar-31093195.jpg" alt="outdoor piano"/>
+            <figcaption> Piano al aire libre </figcaption>
+            <img src="../img/eventos/pexels-photo-8512681.webp" alt="drums"/>
+            <figcaption> Ismael Tribo, baterista</figcaption>
+            <img src="../img/eventos/pianist.jpg" alt="Hugo Martín, nuestro panista"/>
+            <figcaption>Hugo Martín, pianista</figcaption>
+            <img src="../img/eventos/sax.jpg" alt="Jacobo Samuel, saxofonista"/>
+            <figcaption> Jacobo Samuel, saxofonista</figcaption>
+            <img src="../img/eventos/violin.jpg" alt="Anastasia Monicova, violonista"/>
+            <figcaption> Anastasia Monicova, Violonista</figcaption>
+            <img src="../img/eventos/guitar guy.webp" alt="Arthur Leopoldo, guitarrista"/>
+            <figcaption> Arthur Leopoldo, guitarrista </figcaption>
+        </figure>
+    </div>
+</section>
+
+
+<footer>
+
+    <p>Para la compra de tickets, pulse el enlace de abajo</p>
+    <a href="reservas.html">Reservas</a>
+    <p> ¡No te pierdas nuestras noches mágicas de música en vivo! </p>
+</footer>
+
+
+</body>
+
+</html>
+
+
+
